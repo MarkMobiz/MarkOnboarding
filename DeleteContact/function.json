@@ -1,0 +1,30 @@
+{
+  "bindings": [
+    {
+      "authLevel": "anonymous",
+      "type": "httpTrigger",
+      "direction": "in",
+      "name": "req",
+      "methods": [
+        "delete"
+      ]
+    },
+    {
+      "type": "http",
+      "direction": "out",
+      "name": "res"
+    },
+    {
+      "type": "cosmosDB",
+      "name": "deleteContactDocument",
+      "direction": "in",
+      "databaseName": "mark-onboarding-database",
+      "collectionName": "contacts",
+      "createIfNotExists": false,
+      "connectionStringSetting": "CosmosDbConnectionString",
+      "Id": "{Query.id}",
+      "PartitionKey": "{Query.clientId}"
+    }
+  ],
+  "scriptFile": "../dist/DeleteContact/index.js"
+}
