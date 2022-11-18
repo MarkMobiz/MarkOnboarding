@@ -1,0 +1,18 @@
+{
+  "IsEncrypted": false,
+  "Values": {
+    "AzureWebJobsStorage": "DefaultEndpointsProtocol=https;AccountName=markonboardingfunctionap;AccountKey=RX2F/QZpJCMT+UFnejrHRjW8QRgP5GeE1VW0hTQl1BTe/CgS89b9zLm1NWQs8hkY3dD9d8gXG18A+AStcDS30g==;EndpointSuffix=core.windows.net",
+    "FUNCTIONS_EXTENSION_VERSION": "~3",
+    "FUNCTIONS_WORKER_RUNTIME": "node",
+    "WEBSITE_NODE_DEFAULT_VERSION": "~12",
+    "WEBSITE_CONTENTAZUREFILECONNECTIONSTRING": "DefaultEndpointsProtocol=https;AccountName=markonboardingfunctionap;AccountKey=RX2F/QZpJCMT+UFnejrHRjW8QRgP5GeE1VW0hTQl1BTe/CgS89b9zLm1NWQs8hkY3dD9d8gXG18A+AStcDS30g==;EndpointSuffix=core.windows.net",
+    "WEBSITE_CONTENTSHARE": "mark-onboarding-function-appa4b688",
+    "WEBSITE_RUN_FROM_PACKAGE": "1",
+    "APPINSIGHTS_INSTRUMENTATIONKEY": "bbac4277-0808-4c3f-8363-ec1c0a5391cb",
+    "CosmosDbConnectionString": "AccountEndpoint=https://mark-onboarding.documents.azure.com:443/;AccountKey=52LP6JgPIpFwoIYB9F4XczFmKMQrhvZAymMWId4BpGZI2RKIvF7U7mpAZx6HGoYFW2aoMIGYT3ssACDbpahJUg==;",
+    "CosmosDbAccountUrl": "https://mark-onboarding.documents.azure.com:443/",
+    "CosmosDbAccountKey": "52LP6JgPIpFwoIYB9F4XczFmKMQrhvZAymMWId4BpGZI2RKIvF7U7mpAZx6HGoYFW2aoMIGYT3ssACDbpahJUg==",
+    "CosmosDbDatabaseName": "mark-onboarding-database",
+    "CosmosDbContactContainer": "contacts"
+  }
+}
