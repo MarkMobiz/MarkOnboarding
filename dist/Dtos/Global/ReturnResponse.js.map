@@ -1,1 +1,0 @@
-{"version":3,"file":"ReturnResponse.js","sourceRoot":"","sources":["../../../Dtos/Global/ReturnResponse.ts"],"names":[],"mappings":";;;AAAA,MAAa,cAAc;IAKvB,YAAY,IAAY,EAAE,OAAe,EAAE,IAAS;QAC5C,IAAI,CAAC,YAAY,GAAG,IAAI,CAAC;QACzB,IAAI,CAAC,eAAe,GAAG,OAAO,CAAC;QAC/B,IAAI,CAAC,YAAY,GAAG,IAAI,CAAC;IACjC,CAAC;CACJ;AAVD,wCAUC"}
