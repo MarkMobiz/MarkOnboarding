@@ -1,0 +1,39 @@
+{
+  "bindings": [
+    {
+      "authLevel": "anonymous",
+      "type": "httpTrigger",
+      "direction": "in",
+      "name": "req",
+      "methods": [
+        "put"
+      ]
+    },
+    {
+      "type": "http",
+      "direction": "out",
+      "name": "res"
+    },
+    {
+      "type": "cosmosDB",
+      "direction": "out",
+      "name": "outputContactDocument",
+      "databaseName": "mark-onboarding-database",
+      "collectionName": "contacts",
+      "createIfNotExists": false,
+      "connectionStringSetting": "CosmosDbConnectionString"
+    },
+    {
+      "type": "cosmosDB",
+      "name": "inputContactDocument",
+      "direction": "in",
+      "databaseName": "mark-onboarding-database",
+      "collectionName": "contacts",
+      "createIfNotExists": false,
+      "connectionStringSetting": "CosmosDbConnectionString",
+      "Id": "{Query.id}",
+      "PartitionKey": "{Query.clientId}"
+    }
+  ],
+  "scriptFile": "../dist/UpdateContact/index.js"
+}

@@ -1,0 +1,30 @@
+{
+  "bindings": [
+    {
+      "authLevel": "anonymous",
+      "type": "httpTrigger",
+      "direction": "in",
+      "name": "req",
+      "methods": [
+        "get"
+      ]
+    },
+    {
+      "type": "http",
+      "direction": "out",
+      "name": "res"
+    },
+    {
+      "type": "cosmosDB",
+      "name": "contactDocument",
+      "direction": "in",
+      "databaseName": "mark-onboarding-database",
+      "collectionName": "contacts",
+      "createIfNotExists": false,
+      "connectionStringSetting": "CosmosDbConnectionString",
+      "Id": "{Query.id}",
+      "PartitionKey": "{Query.clientId}"
+    }
+  ],
+  "scriptFile": "../dist/ShowContact/index.js"
+}
